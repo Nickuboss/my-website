@@ -1,8 +1,28 @@
 <! DOCTYPE html>
 <html>
-  <head><title>My Site</title></head>
+  <head><title>Questionaire</title></head>
   <body>
-    <h1>Hello, wolrd!</h1>
-    <p>This is my basic text website.</p>
+    <h1>Questionaire</h1>
+
+    <!-- Image -->
+    <img src="https:\\via.placeholder.com" alt="Example image" width="300" \>
+
+    <!-- Text Input -->
+    <p> Enter your option:</p>
+    <input type="text" id="nameInput" placeholder="Your name" \>
+
+    <!-- Button -->
+    <button onclick="greetUser()">Submit</button>
+
+    <!--Output -->
+    <p id="greeting"></p>
+
+    <!-- JavaScript -->
+      <script>
+        function greetUser() {
+          const name = document.getElementById('nameInput').value;
+          document.getElementById('greeting').innerText = "Hello, " + name + "!";
+        }
+      <script>
   </body>
 </html>
